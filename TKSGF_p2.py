@@ -429,7 +429,7 @@ class GraphSAGE(torch.nn.Module):
         return F.log_softmax(x, dim=1)  # Always return log probabilities
 
 
-class GraphSAGE_1(torch.nn.Module):
+class GraphSAGE_1(torch.nn.Module):  # Equivalent to GraphSAGE9
     def __init__(self, in_channels, hidden_channels, out_channels, dropout=0.5):
         super(GraphSAGE_1, self).__init__()
         self.conv1 = SAGEConv(in_channels, hidden_channels)
@@ -446,7 +446,7 @@ class GraphSAGE_1(torch.nn.Module):
         return F.log_softmax(x, dim=1)  # Always return log probabilities
 
 
-class GraphSAGE_2(torch.nn.Module):
+class GraphSAGE_2(torch.nn.Module):  # Equivalent to GraphSAGE10
     def __init__(self, in_channels, hidden_channels, out_channels, dropout=0.5):
         super(GraphSAGE_2, self).__init__()
         self.conv1 = SAGEConv(in_channels, hidden_channels)
