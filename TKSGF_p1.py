@@ -1,4 +1,4 @@
-# graph neural network intrusion code using IoT bot dataset based on feature similarity and faiss
+# Construct graphs based on Top-K attribute similarity
 # Import libraries
 #region
 import pandas as pd
