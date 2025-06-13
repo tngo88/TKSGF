@@ -1,4 +1,4 @@
-# graph neural network intrusion code using IoT bot dataset based on feature similarity and faiss
+# Use graph data generated from TKSGF_p1.py to generate classification report
 # Import libraries
 # region
 import pandas as pd
