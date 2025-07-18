@@ -29,9 +29,9 @@ graph_dir = ".../sim_graph/tmp/" # Location of stored simulation graphs
 df = pd.read_csv(dataset_path)
 
 # Preprocess the dataset 1379275 / 600101
-features = df.iloc[1:, 5:13].values  # Extract feature columns
-labels = df.iloc[1:, -2].values  # Extract label column
-labels_multiclass = df.iloc[1:, -1].values
+features = df.iloc[:, 5:13].values  # Extract feature columns
+labels = df.iloc[:, -2].values  # Extract label column
+labels_multiclass = df.iloc[:, -1].values
 
 # Encode categorical labels numerically
 scaler = StandardScaler()
